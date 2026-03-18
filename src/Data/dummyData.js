@@ -16,11 +16,11 @@ export const UsersData = [
 ]
 
 export const RidesData = [
-    new Ride(globalId.rideCount, 1, "Ali Hassan", "Lahore", "Islamabad", "2024-04-01", "08:00", 3, "Sedan", "03001234567", "AC available"),
-    new Ride(globalId.rideCount, 2, "Sara Khan", "Karachi", "Lahore", "2024-04-02", "09:00", 2, "SUV", "03011234567", "No smoking"),
-    new Ride(globalId.rideCount, 3, "Ahmed Raza", "Islamabad", "Peshawar", "2024-04-03", "10:00", 4, "Van", "03021234567", "Luggage space available"),
-    new Ride(globalId.rideCount, 1, "Ali Hassan", "Lahore", "Multan", "2024-04-04", "07:00", 2, "Sedan", "03001234567", "Early morning ride"),
-    new Ride(globalId.rideCount, 4, "Fatima Malik", "Multan", "Karachi", "2024-04-05", "11:00", 3, "Hatchback", "03031234567", "Female passengers preferred"),
+    new Ride(globalId.rideCount, 1, "Ali Hassan", "Faisal Town", "Wapda Town", "2026-04-01", "08:00", 2, "cd 70", "03001234567", "assas"),
+    new Ride(globalId.rideCount, 2, "Sara Khan", "Johar Town", "Faisla Town", "2026-04-02", "09:00", 5, "toyota", "03011234567", "No smoking"),
+    new Ride(globalId.rideCount, 3, "Ahmed Raza", "Gulberg", "Johar Town", "2026-04-03", "10:00", 2, "cd 125", "03021234567", "sdsd"),
+    new Ride(globalId.rideCount, 1, "Ali Hassan", "Askari", "Faisal Town", "2026-04-04", "07:00", 2, "cd 70", "03001234567", "abcdef"),
+    new Ride(globalId.rideCount, 4, "Fatima Malik", "Faisal Town", "Johar Town", "2026-04-05", "11:00", 5, "corola", "03031234567", "Female passengers only"),
 ]
 
 export const BookingData = [

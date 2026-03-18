@@ -5,7 +5,7 @@ import { bookRide } from 'state/ride/rideSlice';
 import Navbar from './Nav';
 
 const styles = {
-    container: { maxWidth: '800px', margin: '2rem auto', padding: '0 1rem', fontFamily: 'Inter' },
+    container: { maxWidth: '800px', margin: '2rem auto', padding: '0 1rem', fontFamily: 'Funnel Display' },
     heading: { fontSize: '1.5rem', marginBottom: '1rem', color: '#333' },
     filters: { display: 'flex', gap: '1rem', marginBottom: '1.5rem', alignItems: 'center' },
     input: { padding: '0.5rem 0.75rem', border: '1px solid #ccc', borderRadius: '6px', fontSize: '0.95rem', flex: 1 },

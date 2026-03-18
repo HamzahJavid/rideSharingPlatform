@@ -6,7 +6,7 @@ import { Ride } from 'Data/schema';
 import Navbar from './Nav';
 
 const styles = {
-    page: { minHeight: '100vh', backgroundColor: '#f3f4f6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Inter', system-ui, sans-serif" },
+    page: { minHeight: '100vh', backgroundColor: '#f3f4f6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "Noto Sans, system-ui, sans-serif" },
     card: { backgroundColor: '#fff', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', padding: '2.5rem', width: '100%', maxWidth: '480px' },
     heading: { fontSize: '1.6rem', fontWeight: '700', color: '#1e1b4b', marginBottom: '0.4rem' },
     subtext: { color: '#6b7280', fontSize: '0.9rem', marginBottom: '2rem' },

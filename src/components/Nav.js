@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { logOut } from 'state/user/userSlice';
 
 const styles = {
-    nav: { width: '100%', backgroundColor: '#1e1b4b', padding: '0.75rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: "'Poppins', sans-serif", boxSizing: 'border-box' },
+    nav: { width: '100%', backgroundColor: '#1e1b4b', padding: '0.75rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: "Noto Sans,'Poppins', sans-serif", boxSizing: 'border-box' },
     brand: { color: '#fff', fontWeight: '700', fontSize: '1.1rem', textDecoration: 'none' },
     links: { display: 'flex', gap: '1rem', alignItems: 'center' },
     link: { color: '#c7d2fe', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' },

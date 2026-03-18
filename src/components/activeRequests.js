@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './Nav';
 
 const styles = {
-    container: { maxWidth: '800px', margin: '2rem auto', padding: '0 1rem', fontFamily: "'Segoe UI', system-ui, sans-serif" },
+    container: { maxWidth: '800px', margin: '2rem auto', padding: '0 1rem', fontFamily: "'Noto Sans', system-ui, sans-serif" },
     heading: { fontSize: '1.5rem', fontWeight: '700', color: '#1e1b4b', marginBottom: '0.3rem' },
     subtext: { color: '#6b7280', fontSize: '0.9rem', marginBottom: '1.5rem' },
     list: { listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' },
