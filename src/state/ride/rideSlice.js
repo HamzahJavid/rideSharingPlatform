@@ -1,62 +1,39 @@
-import { act } from "react";
-import { createSlice } from "../../../node_modules/@reduxjs/toolkit/dist/index";
-import { useSelector, useDispatch } from "../../../node_modules/react-redux/dist/react-redux";
-import { isLoggedIn } from "state/user/userSlice";
+import { createSlice } from "@reduxjs/toolkit"
+import { RidesData, BookingData, RequestsData } from "Data/dummyData"
 
-//we first export the slice first 
 export const rideSlice = createSlice({
     name: "ride",
     initialState: {
-        allRides: [],
-        rideRequests: [],
-
+        allRides: RidesData,
+        allBookings: BookingData,
+        allRequests: RequestsData,
     },
-    // payload{
-    //     form:
-    //     to:
-    //     requested_by:
-    //     time:
-    //     limit:
-    //     current:
-
-    // }
     reducers: {
-        requestRide: (state, action) => {
-            state.rideRequests.push(action.payload)
-        },
-
         postRide: (state, action) => {
             state.allRides.push(action.payload)
         },
-
-        // payload{
-
-        //  }
-
         bookRide: (state, action) => {
-            const requestedRide = state.allRides.find((ride) => {
-                ride.id == action.payload
-            })
-
-            if (requestRide.limit <= requestRide.current + 1) {
-                //book it
-
+            const { userId, rideId } = action.payload
+            const ride = state.allRides.find(r => r.rideid === rideId)
+            if (!ride) return
+            const alreadyBooked = state.allBookings.some(
+                b => b.rideid === rideId && b.passengerid === userId
+            )
+            if (alreadyBooked) return
+            if (ride.seats > 0) {
+                state.allBookings.push({
+                    bookingid: Date.now(),
+                    rideid: rideId,
+                    passengerid: userId,
+                })
+                ride.seats -= 1
             }
-
-            else {
-                console.log("ride booking not successfull")
-            }
-
+        },
+        postRequest: (state, action) => {
+            state.allRequests.push(action.payload)
         }
-
-
-
     }
-
-
-
-
 })
 
-export const { requestRide, postRide, bookRide } = rideSlice.actions
+export const { postRide, bookRide, postRequest } = rideSlice.actions
 export default rideSlice.reducer
